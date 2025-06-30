@@ -30,15 +30,46 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      background: #007acc;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #005fa3;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>Merhaba, ben reddlex1 👋</h1>
-    <p>Bu benim kişisel sitem. Şu anda geliştiriliyor 🚧</p>
-    <p>
-      <a href="https://github.com/reddlex1" target="_blank">GitHub profilime göz at →</a>
-    </p>
+    <h1>hi 👋</h1>
+    <p>you should create message to support team</p>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <h2>Form</h2>
+      <input type="text" name="name" placeholder="name" required>
+      <input type="email" name="email" placeholder="e-mail" required>
+      <textarea name="message" rows="4" placeholder="message" required></textarea>
+      <button type="submit">submit</button>
+    </form>
   </div>
 </body>
 </html>
