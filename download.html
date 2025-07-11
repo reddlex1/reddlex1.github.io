@@ -3,75 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Golden Boot İndir</title>
+  <title>Golden Boot</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-    img.logo {
-      width: 150px; /* İsterseniz büyüklüğü ayarlayın */
-      height: auto;
-      margin-bottom: 20px;
-    }
-    h1 {
-      color: #333;
-      margin: 0 0 10px 0;
-    }
-    .buttons {
-      margin-top: 30px;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Roboto', sans-serif;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background: #121212cc;
+      padding: 30px 40px;
+      border-radius: 20px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 0 20px #00ff94aa;
+      backdrop-filter: blur(10px);
+    }
+
+    img.logo {
+      width: 160px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 5px #00ff94);
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { filter: drop-shadow(0 0 5px #00ff94); }
+      50% { filter: drop-shadow(0 0 20px #00ff94); }
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      color: #00ff94;
+      text-shadow: 0 0 8px #00ff94;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #ccc;
+      text-shadow: 0 0 4px #000;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
-      justify-content: center;
     }
+
     a.btn {
-      background: #007bff;
-      color: white;
-      padding: 15px 30px;
-      border-radius: 8px;
+      flex: 1 1 140px;
+      background: linear-gradient(45deg, #00ff94, #00c28a);
+      padding: 15px 0;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #121212;
       text-decoration: none;
-      font-size: 18px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-      transition: background 0.3s ease;
+      box-shadow: 0 4px 15px #00ff94aa;
+      transition: all 0.3s ease;
+      user-select: none;
+      letter-spacing: 1.1px;
     }
+
     a.btn:hover {
-      background: #0056b3;
+      background: linear-gradient(45deg, #00c28a, #008060);
+      box-shadow: 0 6px 20px #00ff94ee;
+      color: #e0ffe0;
+      transform: translateY(-3px);
     }
+
     footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #666;
+      margin-top: 35px;
+      font-size: 13px;
+      color: #555;
+      text-shadow: none;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px 25px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      a.btn {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <img src="logo.png" alt="Golden Boot Logo" class="logo" />
+  <div class="container">
+    <img src="logo.png" alt="Golden Boot Logo" class="logo" />
 
-  <h1>Golden Boot Uygulamasını İndir</h1>
-  <p>Platformunuza uygun butona tıklayarak uygulamamızı hemen indirebilirsiniz.</p>
+    <h1>Golden Boot'u İndir & Oyna!</h1>
+    <p>Dünyaya meydan oku, altın kramponu kap!</p>
 
-  <div class="buttons">
-    <a href="https://play.google.com/store/apps/details?id=com.ahmetikrdggm" target="_blank" class="btn" rel="noopener noreferrer">
-      Android İçin İndir
-    </a>
-    <a href="https://apps.apple.com/us/app/golden-boot/id6747951423" target="_blank" class="btn" rel="noopener noreferrer">
-      iOS İçin İndir
-    </a>
+    <div class="buttons">
+      <a href="https://play.google.com/store/apps/details?id=com.ahmetikrdggm" target="_blank" class="btn" rel="noopener noreferrer">
+        Android İçin İndir
+      </a>
+      <a href="https://apps.apple.com/us/app/golden-boot/id6747951423" target="_blank" class="btn" rel="noopener noreferrer">
+        iOS İçin İndir
+      </a>
+    </div>
+
+    <footer>
+      © 2025 Golden Boot - Futbolun Keyfini Çıkar
+    </footer>
   </div>
-
-  <footer>
-    Golden Boot © 2025
-  </footer>
 
 </body>
 </html>
