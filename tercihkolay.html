@@ -5,59 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tercih Kolay</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Nunito:wght@800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto&display=swap');
 
     body {
       margin: 0;
       height: 100vh;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      background: linear-gradient(135deg, #55c4a3, #39b491);
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: 'Roboto', sans-serif;
-      color: #f0f0f0;
+      color: #fff;
       text-align: center;
       padding: 20px;
       box-sizing: border-box;
     }
 
     .container {
-      background: #ffffff0d;
-      padding: 30px 40px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 35px 40px;
       border-radius: 20px;
       max-width: 400px;
       width: 100%;
-      box-shadow: 0 0 20px #ffffff33;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(12px);
     }
 
     img.logo {
       width: 140px;
       margin-bottom: 20px;
-      border-radius: 30%;
-      box-shadow: 0 0 10px #ffffff88;
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
       animation: pulse 3s infinite;
     }
 
     @keyframes pulse {
-      0%, 100% { box-shadow: 0 0 10px #ffffff88; }
-      50% { box-shadow: 0 0 25px #ffffffcc; }
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
     }
 
     h1 {
       font-family: 'Nunito', sans-serif;
-      font-weight: 800;
       font-size: 2.2rem;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       color: #ffffff;
-      text-shadow: 0 0 6px #00000066;
+      text-shadow: 0 0 6px rgba(0,0,0,0.3);
     }
 
     p {
       font-size: 1rem;
       margin-bottom: 30px;
-      color: #dddddd;
-      text-shadow: 0 0 4px #00000044;
+      color: #f3f3f3;
     }
 
     .buttons {
@@ -69,35 +66,33 @@
 
     a.btn {
       flex: 1 1 140px;
-      background: linear-gradient(45deg, #ffdc60, #f9a826);
+      background: linear-gradient(45deg, #ffffff, #e0fef3);
       padding: 14px 0;
       border-radius: 50px;
       font-weight: 700;
       font-size: 1.1rem;
-      color: #222;
+      color: #2a6754;
       text-decoration: none;
-      box-shadow: 0 4px 15px #f9a82699;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
       transition: all 0.3s ease;
       user-select: none;
-      letter-spacing: 1px;
     }
 
     a.btn:hover {
-      background: linear-gradient(45deg, #f9a826, #e48b00);
-      color: #fffbe0;
+      background: linear-gradient(45deg, #eafff6, #c3f0de);
       transform: translateY(-3px);
+      color: #1a4e3e;
     }
 
     footer {
       margin-top: 35px;
       font-size: 13px;
-      color: #ccc;
-      text-shadow: none;
+      color: #e0e0e0;
     }
 
     @media (max-width: 480px) {
       .container {
-        padding: 20px 25px;
+        padding: 25px 20px;
       }
       h1 {
         font-size: 1.8rem;
@@ -113,20 +108,20 @@
   <div class="container">
     <img src="tercih-kolay-logo.png" alt="Tercih Kolay Logo" class="logo" />
 
-    <h1>Tercih Kolay'ı İndir!</h1>
-    <p>Tercih döneminde hızlı, sade ve güvenilir rehberiniz.</p>
+    <h1>Tercih Kolay'ı Hemen İndir!</h1>
+    <p>Geleceğini şekillendirmenin en kolay yolu şimdi cebinde.</p>
 
     <div class="buttons">
       <a href="https://play.google.com/store/search?q=tercih%20kolay&c=apps" target="_blank" class="btn" rel="noopener noreferrer">
-        Android İçin İndir
+        Android
       </a>
       <a href="https://apps.apple.com/us/app/tercih-kolay/id6748535388" target="_blank" class="btn" rel="noopener noreferrer">
-        iOS İçin İndir
+        iOS
       </a>
     </div>
 
     <footer>
-      © 2025 Tercih Kolay – Kolayca Karar Ver
+      © 2025 Tercih Kolay – Rehberiniz, Yardımcınız.
     </footer>
   </div>
 
